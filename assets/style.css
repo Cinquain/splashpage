@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: linear-gradient(
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0.1)
+      ), url(./images/grid.png);
+    background-size: cover;
+}
+
+
+section {
+    height: 100vh;
+    width: 100vw;
+}
+
+section .header  {
+    padding-top: 10px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+section .header a {
+    padding: 20px;
+}
+
+section .header a img {
+    height: 50px;
+    width: auto;
+}
+
+
+section .mid-section {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: center;
+}
+
+section .mid-section .column {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section .mid-section .column h1 {
+    color: white;
+    font-size: 38px;
+    font-weight: 100;
+    font-family: 'Lato';
+}
+
+section .mid-section .column a {
+    margin-top: 10px;
+    padding: 20px 60px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 4px;
+    background-color: orange;
+    transition: 0.5s;
+}
+
+section .mid-section .column a:hover {
+    background: #03e9f4;
+    color: white;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4
+}
+section .mid-section img {
+    height: 1200px;
+    width: auto;
+    object-fit: contain;
+}
+
+@media(max-width: 767px) {
+    section .mid-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section .mid-section .column h1 {
+        font-size: 24px;
+    }
+}
