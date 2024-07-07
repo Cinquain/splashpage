@@ -13,6 +13,7 @@ body {
         rgba(0, 0, 0, 0.1)
       ), url(./images/grid.png);
     background-size: cover;
+    overflow: hidden;
 }
 
 
@@ -67,6 +68,7 @@ section .mid-section .column a {
     border-radius: 30px;
     text-decoration: none;
     color: black;
+    font-family: 'Lato';
     letter-spacing: 4px;
     background-color: orange;
     transition: 0.5s;
@@ -82,6 +84,15 @@ section .mid-section .column a:hover {
 }
 section .mid-section img {
     height: 1200px;
+    width: auto;
+    object-fit: contain;
+}
+
+section .footer {
+    padding: 20px;
+}
+section .footer img {
+    height: 30px;
     width: auto;
     object-fit: contain;
 }
