@@ -11,9 +11,9 @@ body {
     background: linear-gradient(
         rgba(0, 0, 0, 1),
         rgba(0, 0, 0, 0.1)
-      ), url(./images/grid.png);
+      ), url(./images/honeycomb\ pattern.jpg);
+    background-color: black;
     background-size: cover;
-    overflow: hidden;
 }
 
 
@@ -57,9 +57,10 @@ section .mid-section .column {
 }
 section .mid-section .column h1 {
     color: white;
-    font-size: 38px;
+    font-size: 44px;
     font-weight: 100;
     font-family: 'Lato';
+    text-align: center;
 }
 
 section .mid-section .column a {
@@ -97,6 +98,12 @@ section .footer img {
     object-fit: contain;
 }
 
+#qrcode {
+    height: 800px;
+    width: auto;
+    object-fit: contain;
+}
+
 @media(max-width: 767px) {
     section .mid-section {
         display: flex;
@@ -106,5 +113,6 @@ section .footer img {
 
     section .mid-section .column h1 {
         font-size: 24px;
+        padding-top: 100px;
     }
 }
